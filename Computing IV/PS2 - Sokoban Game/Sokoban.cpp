@@ -145,8 +145,7 @@ std::istream& operator>>(std::istream& stream, Sokoban& sokoban) {
     return stream;
 }
 
-
-void Sokoban::draw(sf::RenderTarget& target, sf::RenderStates states) const {
+  void Sokoban::draw(sf::RenderTarget& target, sf::RenderStates states)const  {
     // creating copies of each sprite in order to be modified by setPosition
     sf::Sprite environment = this->environment;
     sf::Sprite wall = this->wall;
@@ -214,7 +213,7 @@ void Sokoban::draw(sf::RenderTarget& target, sf::RenderStates states) const {
             }
         }
     }
-}
+  }
 
   // getter function for player sprite with default texture
   sf::Sprite& Sokoban:: getPlayer() {

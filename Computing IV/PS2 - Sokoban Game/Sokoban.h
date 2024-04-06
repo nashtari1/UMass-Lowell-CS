@@ -37,8 +37,9 @@ sf::Text winText;
     bool isWon() const;
 
  private:
-    virtual void draw
-    (sf::RenderTarget& target, sf::RenderStates states) const override;
+    void draw
+    (sf::RenderTarget& target,  // NOLINT(runtime/references)
+    sf::RenderStates states) const override;
     std::vector<sf::Sprite> storageLocations;
     void setStorageLocations();
 
